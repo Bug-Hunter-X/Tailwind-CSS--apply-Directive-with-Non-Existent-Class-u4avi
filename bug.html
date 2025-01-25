@@ -1,0 +1,7 @@
+This error occurs when using Tailwind CSS's `@apply` directive with a class that doesn't exist or is misspelled.  For example:
+
+```html
+<div class="bg-blue-500 @apply text-red-500 text-wrong-class"></div>
+```
+
+If `text-wrong-class` is not defined in your Tailwind configuration, it won't throw an error during build, but the class won't be applied, resulting in unexpected styling. 
